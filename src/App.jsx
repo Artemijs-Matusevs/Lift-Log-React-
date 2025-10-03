@@ -2,12 +2,12 @@ import { useState } from 'react'
 import './App.css'
 
 //Componenets
-import LoginMain from './components/LoginMain'
+import AuthMain from './components/AuthMain'
 
 function App() {
   return (
     <div className="app-body"> 
-      <LoginMain />
+      <AuthMain />
     </div>
   )
 }

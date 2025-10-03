@@ -3,7 +3,7 @@ import LandingPage from "./LandingPage";
 import SignInPage from "./SignIn";
 import Register from "./Register";
 
-export default function LoginMain(){
+export default function AuthMain(){
 
     const [isLogin, setIsLogin] = useState(true);
 
