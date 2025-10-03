@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export default function SignInPage(){
+export default function SignInPage({onToggle}){
 
     // State for login data
     const [loginData, setLoginData] = useState({
@@ -58,7 +58,7 @@ export default function SignInPage(){
                 <p className="auth-subtext">Or login/sign-up using</p>
                 <ion-icon name="logo-google"></ion-icon>
 
-                <p className="register-text">Register</p>
+                <p onClick={onToggle} className="register-text">Register</p>
             </form>
         </div>
     )
