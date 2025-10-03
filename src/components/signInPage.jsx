@@ -28,9 +28,9 @@ export default function SignInPage(){
     // JSX for the sign-in page
     return(
         <div className="page lower-page">
-            <h1>LOGIN</h1>
+            <h1 className="auth-header">LOGIN</h1>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} className="auth-form">
                 <input
                     type="text"
                     name="username"
@@ -49,7 +49,16 @@ export default function SignInPage(){
                     placeholder="Password*"
                 />
 
-                <button type="submit">Sign In</button>
+                <div className="forgot-password-container">
+                    <a className="forgot-password" href="www.google.com">Forgot password?</a>
+                </div>
+
+                <button type="submit">Submit</button>
+
+                <p className="auth-subtext">Or login/sign-up using</p>
+                <ion-icon name="logo-google"></ion-icon>
+
+                <p className="register-text">Register</p>
             </form>
         </div>
     )
