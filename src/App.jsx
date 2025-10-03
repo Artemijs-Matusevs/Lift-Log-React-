@@ -5,7 +5,6 @@ import './App.css'
 import LoginMain from './components/LoginMain'
 
 function App() {
-
   return (
     <div className="app-body"> 
       <LoginMain />
