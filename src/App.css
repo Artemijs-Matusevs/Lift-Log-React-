@@ -1,6 +1,118 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cedarville+Cursive&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 .app-body{
     min-width: 360px;
     min-height: 640px;
     background-color: #2E3124;
     box-shadow: rgba(255, 255, 255, 0.5) 0px 0px 10px 1px;
 }
+
+/* hide any scrollbars  */
+::-webkit-scrollbar {
+    display: none;
+}
+
+.last-letter{
+    letter-spacing: 0;
+}
+
+/* Login Main Styles */
+.login-main-container{
+    width: 360px;
+    height: 640px;
+    color: white;
+    font-family: bodoni moda, serif;
+    overflow-y:scroll;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.page{
+    width: 360px;
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+
+}
+
+.upper-page{
+    z-index: 1;
+    top: 0;
+    position: sticky;
+}
+
+.lower-page{
+    z-index: 2;
+    position: relative;
+    background-color: rgba(46, 49, 36, 0.95);
+}
+
+
+
+
+
+.login-main-container p{
+    position: relative;
+    top: 8rem;
+    letter-spacing: 0.2rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: white;
+    font-weight: 200;
+}
+
+.login-main-container h1{
+    letter-spacing: 0.8rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.login-main-container h2{
+    letter-spacing: 0.6rem;
+    font-size: 1rem;
+    margin-bottom: -5px;
+    margin-top: 3rem;
+    font-style: normal;
+    font-weight: 200;
+}
+
+.login-main-container h3{
+    letter-spacing: 0.3rem;
+    font-size: 0.8rem;
+    font-style: italic;
+    color: #8FC11C;
+    font-weight: 200;
+}
+
+
+.strike {
+  position: relative;
+  display: inline-block; 
+}
+
+.strike::after {
+  content: "";
+  position: absolute;
+  top: 50%;                     
+  left: -1.875rem;                 
+  right: -1.875rem;                
+  height: 2px;                  
+  background: #F99503;     
+  transform: translateY(-50%);  
+}
+
+.login-main-image{
+    width: 11.438rem;
+    height: auto;
+    margin-top: 6rem;
+}
+
+
