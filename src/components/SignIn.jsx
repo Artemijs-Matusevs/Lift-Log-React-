@@ -61,7 +61,7 @@ export default function SignInPage({onToggle, onLoginSuccess}){
                 <button type="submit">Submit</button>
 
                 <p className="auth-subtext">Or login/sign-up using</p>
-                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon className="google-icon" name="logo-google"></ion-icon>
 
                 <p onClick={onToggle} className="register-text">Register</p>
             </form>

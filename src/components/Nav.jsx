@@ -2,10 +2,10 @@ export default function Nav(){
     return(
         <nav className="nav-bar">
             <ul>
-                <li> Home </li>
-                <li> History </li>
-                <li> Workout </li>
-                <li> Logout </li>
+                <li> <ion-icon name="home-outline"></ion-icon> </li>
+                <li> <ion-icon name="time-outline"></ion-icon> </li>
+                <li> <ion-icon name="barbell-outline"></ion-icon> </li>
+                <li> <ion-icon name="log-out-outline"></ion-icon> </li>
             </ul>
         </nav>
     )
