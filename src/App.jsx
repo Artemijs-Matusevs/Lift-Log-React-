@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import {BrowserRouter as Router} from 'react-router-dom'
 import Routes from './routes/Routes'
+import Nav from './components/Nav'
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
           isAuthenticated={isAuthenticated} 
           onLoginSuccess={handleLoginSuccess}
         />
+        
+        {isAuthenticated && <Nav />}
       </div>
     </Router> 
   )
