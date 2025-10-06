@@ -9,10 +9,18 @@ function App() {
   //Authentication state, default to unauthenticated
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
+  //Handle authentication
+  const handleLoginSuccess = () => {
+    setIsAuthenticated(true);
+  }
+
   return (
     <Router>
       <div className="app-body"> 
-        <Routes isAuthenticated={isAuthenticated}/>
+        <Routes 
+          isAuthenticated={isAuthenticated} 
+          onLoginSuccess={handleLoginSuccess}
+        />
       </div>
     </Router> 
   )

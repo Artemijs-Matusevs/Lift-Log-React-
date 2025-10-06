@@ -1,6 +1,6 @@
 import {useState} from "react";
 
-export default function SignInPage({onToggle}){
+export default function SignInPage({onToggle, onLoginSuccess}){
 
     // State for login data
     const [loginData, setLoginData] = useState({
@@ -21,8 +21,13 @@ export default function SignInPage({onToggle}){
     const handleSubmit = (e) => {
         e.preventDefault();// Prevent default form submission
 
-        console.log("Login Data:", loginData);
         //Authentication logic goes here
+        //Hard coded values for demo purposes
+        if(loginData.username === "user" && loginData.password === "pass"){
+            onLoginSuccess(); // Notify parent component of successful login
+        } else {
+            alert("Invalid credentials. Please try again.");
+        }
     }
 
     // JSX for the sign-in page

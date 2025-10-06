@@ -3,7 +3,7 @@ import LandingPage from "./LandingPage";
 import SignInPage from "./SignIn";
 import Register from "./Register";
 
-export default function AuthMain(){
+export default function AuthMain({onLoginSuccess}){
 
     const [isLogin, setIsLogin] = useState(true);
 
@@ -16,7 +16,7 @@ export default function AuthMain(){
             <LandingPage />
             
             {isLogin ? (
-                <SignInPage onToggle={toggleAuthMode} />
+                <SignInPage onToggle={toggleAuthMode} onLoginSuccess={onLoginSuccess} />
             ) : (
                 <Register onToggle={toggleAuthMode} />  
             )}
