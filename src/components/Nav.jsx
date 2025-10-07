@@ -1,6 +1,6 @@
 import {Link, useLocation} from "react-router-dom";
 
-export default function Nav(){
+export default function Nav({onLogout}){
     const location = useLocation();
 
     return(
@@ -24,7 +24,7 @@ export default function Nav(){
                     </Link>
                 </li>
 
-                <li> 
+                <li onClick={onLogout}> 
                     <Link to="/logout" className={location.pathname === '/logout' ? 'active' : 'not-active'}>
                         <ion-icon name="log-out-outline"></ion-icon>
                     </Link>

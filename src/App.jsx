@@ -15,6 +15,12 @@ function App() {
     setIsAuthenticated(true);
   }
 
+  const handleLogout = () => {
+    setIsAuthenticated(false);
+  }
+
+  
+
   return (
     <Router>
       <div className="app-body"> 
@@ -23,7 +29,7 @@ function App() {
           onLoginSuccess={handleLoginSuccess}
         />
         
-        {isAuthenticated && <Nav />}
+        {isAuthenticated && <Nav onLogout={handleLogout} />}
       </div>
     </Router> 
   )
