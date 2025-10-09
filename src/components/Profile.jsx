@@ -1,4 +1,4 @@
-export default function Profile({currentXP = 75, maxXP=100, level=1}){
+export default function Profile({currentXP = 34, maxXP=100, level=17}){
 
     const xpPercentage = (currentXP / maxXP) * 100;
 
@@ -9,7 +9,12 @@ export default function Profile({currentXP = 75, maxXP=100, level=1}){
             </div>
         
             <div className="profile-right-section">
-                <h1> T I M M M </h1>
+                <div className="name-container">
+                    <h1> T I M M M </h1>
+                    <div className="level-badge">
+                        <p> {level} </p>
+                    </div>
+                </div>
 
                 <div className="xp-container">
                     <div className="xp-bar">
