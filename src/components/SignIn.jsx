@@ -34,6 +34,7 @@ export default function SignInPage({onToggle, onLoginSuccess}){
     return(
         <div className="page lower-page">
             <h1 className="auth-header">LOGIN</h1>
+            <p onClick={onToggle} className="register-text">Register</p>
 
             <form onSubmit={handleSubmit} className="auth-form">
                 <input
@@ -63,7 +64,6 @@ export default function SignInPage({onToggle, onLoginSuccess}){
                 <p className="auth-subtext">Or login/sign-up using</p>
                 <ion-icon className="google-icon" name="logo-google"></ion-icon>
 
-                <p onClick={onToggle} className="register-text">Register</p>
             </form>
         </div>
     )

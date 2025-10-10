@@ -10,7 +10,7 @@ export default function Profile({currentXP = 34, maxXP=100, level=17}){
         
             <div className="profile-right-section">
                 <div className="name-container">
-                    <h1 className="username"> T I M M M m m m</h1>
+                    <h1 className="username"> TimTam2611  </h1>
                     <div className="level-badge">
                         <p> {level} </p>
                     </div>
@@ -27,7 +27,7 @@ export default function Profile({currentXP = 34, maxXP=100, level=17}){
                     </div>
                 </div>
 
-                <h2> WORKOUTS:46 </h2>
+                <h2 className="workouts-count"> WORKOUTS: 46 </h2>
             </div>
         </div>
     )
