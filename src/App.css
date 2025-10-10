@@ -56,10 +56,6 @@
     padding-top: 5vh;
 }
 
-
-
-
-
 .swipe-up-text{
     position: fixed;
     bottom: 5vh;
@@ -70,11 +66,13 @@
     font-weight: 200;
 }
 
-.login-main-container h1{
+.main-header{
     letter-spacing: 0.8rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-style: normal;
-    font-weight: 200;
+    font-weight: 600;
+    color: white;
+    font-family: bodoni moda, serif;
 }
 
 .login-main-container h2{
@@ -104,8 +102,8 @@
   content: "";
   position: absolute;
   top: 50%;                     
-  left: -1.875rem;                 
-  right: -1.875rem;                
+  left: -3.25rem;                 
+  right: -3.25rem;                
   height: 2px;                  
   background: #F99503;     
   transform: translateY(-50%);  
@@ -429,6 +427,46 @@ content: "";
     top: -10px;
     color: white !important;
     font-size: 1rem !important; 
+}
+
+
+
+/* HISTORY STYLES */
+.history-container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 80px 20px;
+}
+
+.history-calendar-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.history-month-selector{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.month-text{
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    font-weight: 200;
+    font-family: bodoni moda, serif;
+    background-image: linear-gradient(90deg, #8BE0C8 0%, #24efb5);
+    color: transparent;
+    background-clip: text;  
 }
 
 

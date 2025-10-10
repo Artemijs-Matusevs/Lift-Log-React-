@@ -33,7 +33,7 @@ export default function SignInPage({onToggle, onLoginSuccess}){
     // JSX for the sign-in page
     return(
         <div className="page lower-page">
-            <h1 className="auth-header">LOGIN</h1>
+            <h1 className="auth-header main-header">LOGIN</h1>
             <p onClick={onToggle} className="register-text">Register</p>
 
             <form onSubmit={handleSubmit} className="auth-form">

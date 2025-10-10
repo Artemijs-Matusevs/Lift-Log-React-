@@ -5,7 +5,7 @@ export default function Register({onToggle}){
     // JSX for the sign-in page
     return(
         <div className="page lower-page">
-            <h1 className="auth-header">REGISTER</h1>
+            <h1 className="auth-header main-header">REGISTER</h1>
             <p onClick={onToggle} className="register-text">Login</p>
 
             <form className="auth-form">
