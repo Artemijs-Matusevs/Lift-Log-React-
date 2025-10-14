@@ -6,7 +6,7 @@ export default function HistoryEntry({ bgColor }){
                 <p className="history-subtitle"> Thursday 18 September 2025 at 07:16 </p>
             </div>
             <div className="history-entry-right">
-                <h1> ... </h1>
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
             </div>
         </div>
     )

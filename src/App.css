@@ -470,6 +470,10 @@ content: "";
 }
 
 /* History Entry component */
+.history-entry-right:hover{
+    cursor: pointer;
+}
+
 .history-total-entries-container{
     width: 100%;
     height: 50dvh;
