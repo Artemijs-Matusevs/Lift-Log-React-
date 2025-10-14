@@ -15,12 +15,18 @@ export default function History(){
                         <p className="workouts-count"> 3 Workouts </p>
                     </div>
                 </div>
-
-                <div className="history-entries-container">
-                    <HistoryEntry />
-                    <HistoryEntry />
-                    <HistoryEntry />
+                
+                <div className="history-total-entries-container">
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
+                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
                 </div>
+
             </div>
         </div>
     )
