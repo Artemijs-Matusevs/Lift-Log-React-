@@ -1,6 +1,10 @@
 import HistoryEntry from "./components/HistoryEntry";
+import "./History.css";
 
 export default function History(){
+    const bgColorWhite = "rgba(255, 255, 255, 0.05)";
+    const bgColorNone = "rgba(255, 255, 255, 0)";
+
     return(
         <div className="page">
             <div className="history-container">
@@ -17,14 +21,9 @@ export default function History(){
                 </div>
                 
                 <div className="history-total-entries-container">
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0.05)" />
-                    <HistoryEntry bgColor="rgba(255, 255, 255, 0)"/>
+                    <HistoryEntry bgColor= {bgColorWhite} />
+                    <HistoryEntry bgColor= {bgColorNone}/>
+                    <HistoryEntry bgColor= {bgColorWhite} />
                 </div>
 
             </div>

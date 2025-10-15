@@ -1,4 +1,5 @@
 import Profile from "./components/Profile";
+import "./Dashboard.css";
 
 export default function Dashboard(){
     return(
