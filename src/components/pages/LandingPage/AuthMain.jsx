@@ -1,7 +1,7 @@
 import {useState} from "react";
-import LandingPage from "./LandingPage";
-import SignInPage from "./SignIn";
-import Register from "./Register";
+import LandingPage from "./components/LandingPage";
+import SignInPage from "./components/SignIn";
+import Register from "./components/Register";
 
 export default function AuthMain({onLoginSuccess}){
 

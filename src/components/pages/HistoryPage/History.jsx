@@ -1,4 +1,4 @@
-import HistoryEntry from "./HistoryEntry";
+import HistoryEntry from "./components/HistoryEntry";
 
 export default function History(){
     return(
