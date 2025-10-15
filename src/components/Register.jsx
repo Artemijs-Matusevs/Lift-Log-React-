@@ -11,9 +11,9 @@ export default function Register({onToggle}){
             <form className="auth-form">
                 <input
                     type="text"
-                    name="fullName"
+                    name="username"
                     required
-                    placeholder="Full Name*"
+                    placeholder="username*"
                 />
 
                 <input
@@ -24,17 +24,17 @@ export default function Register({onToggle}){
                 />
 
                 <input
-                    type="text"
-                    name="username"
-                    required
-                    placeholder="Username*"
-                />
-
-                <input
                     type="password"
                     name="password"
                     required
                     placeholder="Password*"
+                />
+
+                <input
+                    type="password"
+                    name="password-confirm"
+                    required
+                    placeholder="Confirm password*"
                 />
 
 

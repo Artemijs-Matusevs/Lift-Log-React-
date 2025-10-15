@@ -6,8 +6,10 @@ export default function Dashboard(){
             <Profile />
             <div className="iron-gallery-container">
                 <div className="iron-gallery-header">
-                    <h1> IRON GALLERY </h1>
-                    <h1 className="iron-gallery-settings"> ... </h1>
+                    <h1> Iron gallery </h1>
+                    <div className="iron-gallery-edit-button">
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
                 </div>
             </div>
             
